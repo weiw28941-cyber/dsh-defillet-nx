@@ -98,12 +98,4 @@ are excluded from version control; the explicitly included test STEP is an excep
 Retain personal material under
 `local-artifacts/`; `.gitignore` does not erase previously committed content.
 
-## Publication Status
 
-This checkout is being prepared for publication; nothing is automatically pushed.
-Existing history contains local CAD artifacts, SDK copies, company binaries and
-papers. Removing them from the current index does not remove that history.
-Review [the cleanup report](docs/repository_cleanup.md) before any publication.
-No project license or redistribution permission for third-party material is
-asserted. Do not publish the existing history without a separate approved cleanup
-or an approved clean-history export.
