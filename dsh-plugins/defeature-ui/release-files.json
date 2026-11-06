@@ -1,0 +1,43 @@
+{
+  "runtime": [
+    "webapp/backend/app/__init__.py",
+    "webapp/backend/app/component_rendering.py",
+    "webapp/backend/app/config.py",
+    "webapp/backend/app/fillet_components.py",
+    "webapp/backend/app/fillet_detection.py",
+    "webapp/backend/app/geometry.py",
+    "webapp/backend/app/main.py",
+    "webapp/backend/app/nx_cad_tools.py",
+    "webapp/backend/app/nx_persistent_worker.py",
+    "webapp/backend/app/nx_runtime_contracts.py",
+    "webapp/backend/app/nx_runtime_coordinator.py",
+    "webapp/backend/app/nx_runtime_store.py",
+    "webapp/backend/app/nx_worker.py",
+    "webapp/backend/app/planner.py",
+    "webapp/backend/app/schemas.py",
+    "webapp/backend/app/store.py",
+    "webapp/backend/app/worker.py",
+    "webapp/backend/requirements.txt",
+    "cad/OccUtils/map_freecad_face_to_step.py",
+    "cad/Defillet/nx_1_defillet.py",
+    "cad/Defillet/nx_web_delete_fillet.py",
+    "cad/Defillet/nx_web_classify_fillet_faces.py",
+    "cad/Defillet/nx_web_detect_fillet_components.py",
+    "cad/Defillet/nx_web_delete_fillet_component.py",
+    "cad/Defillet/nx_web_remove_all_fillets.py",
+    "cad/nx_persistent_worker.py"
+  ],
+  "skills": [
+    "fillet-removal-strategy/SKILL.md",
+    "fillet-removal-strategy/references/strategy-background.md",
+    "nx-delete-fillet-component/SKILL.md",
+    "nx-delete-fillet-component/references/api-contract.md",
+    "nx-delete-fillet-component/references/layered-deletion-case.md",
+    "nx-delete-fillet-component/references/r7-replay-and-local-u-chains-2026-10-19.md",
+    "nx-delete-fillet-component/references/strategy-matrix.md",
+    "nx-delete-fillet-component/references/validation.md",
+    "nx-delete-fillet-component/references/vertex-junction-blue-chain-r0-2026-10-20.md",
+    "nx-remove-fillets/SKILL.md",
+    "nx-remove-fillets/references/api-contract.md"
+  ]
+}

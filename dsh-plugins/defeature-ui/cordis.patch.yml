@@ -1,0 +1,4 @@
+# Add the Defeature host backend manager and browser workbench to DSH Web.
+- insert:
+    - id: defeature-ui
+      name: '@defeature/dsh-ui'

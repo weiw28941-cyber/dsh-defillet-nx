@@ -1,0 +1,60 @@
+{
+  "name": "@defeature/dsh-ui",
+  "version": "0.1.0",
+  "description": "NX STEP defeaturing tools, skills, agent presets and CAD workbench for DeepSeek Harness",
+  "type": "module",
+  "main": "lib/index.js",
+  "dependencies": {
+    "@deepseek-ai/dsh-attachment": "^0.1.1-rc.2",
+    "@deepseek-ai/dsh-llm": "^0.1.1-rc.2",
+    "@deepseek-ai/dsh-tools": "^0.1.1-rc.2",
+    "@deepseek-ai/dsh-skill-filesystem": "^0.1.1-rc.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "react": "^19.1.1",
+    "three": "^0.180.0"
+  },
+  "engines": { "node": ">=22.19.0" },
+  "publishConfig": { "access": "public" },
+  "scripts": {
+    "build": "node scripts/build-client.mjs",
+    "release": "node scripts/package-release.mjs",
+    "test:package": "node --test test/package.test.mjs",
+    "test:host": "node test/host-smoke.mjs",
+    "test:tools": "node test/tools.test.mjs",
+    "test:mapping": "node test/mapping.test.mjs"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools": "./lib/tools.js",
+    "./skills": "./lib/skills.js",
+    "./client": "./client/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "client",
+    "src",
+    "presets",
+    "skills",
+    "runtime",
+    "environment.yml",
+    "release-manifest.json",
+    "README.md",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-runtime"
+      ],
+      "platform": "web"
+    }
+  }
+}

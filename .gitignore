@@ -1,0 +1,47 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.pyc.*
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage/
+
+# Python environments
+.venv/
+venv/
+env/
+.conda/
+
+# IDE and OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+~$*
+webapp/jobs/
+# Build, dependency, and packaging output
+build/
+dist/
+node_modules/
+*.egg-info/
+*.tsbuildinfo
+.vite/
+.npm/
+.pnpm-store/
+# data
+*.stp
+*.step
+
