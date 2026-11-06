@@ -81,8 +81,3 @@ python -m pytest webapp/backend/tests -q
 明确纳入的 STEP 测试样本除外。
 个人材料可保存在 `local-artifacts/`。`.gitignore` 不会清除已经提交的历史内容。
 
-## 发布说明
-
-本仓库正在准备公开；构建不会自动推送。现有历史包含本地 CAD 产物、SDK 副本、公司二进制
-及论文，从当前索引移除这些文件并不会清除历史。公开前请审查
-[仓库清理记录](docs/repository_cleanup.md)，并确认许可证、第三方材料再分发权限及历史清理结果。
